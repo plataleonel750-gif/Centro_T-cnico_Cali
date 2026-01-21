@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Centro Técnico Cali: reparación profesional de neveras. Servicio técnico especializado con garantía." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="stylesheet" href="nosotros.css">
+
+  <title>Centro Técnico Cali</title>
+
+ 
+  <script src="funcionMenu.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- Marca: visible en móvil y escritorio. Click -> home -->
+      <a class="brand" href="index.html" aria-label="Ir a inicio - Centro Técnico Cali">
+        <!-- Opcional: icono -->
+        <!-- <span class="brand-mark" aria-hidden="true">...</span> -->
+        <span class="brand-name">Centro Técnico Cali</span>
+      </a>
+
+      <!-- Menú escritorio -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <!-- Botones escritorio -->
+      <div class="cta" aria-label="Acciones rápidas">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/3176378539"
+           target="_blank" rel="noopener"
+           aria-label="Chatear por WhatsApp">
+          <!-- icono WhatsApp (simple) -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.97L0 24l6.3-1.66a11.86 11.86 0 0 0 5.76 1.47h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.43Zm-8.46 18.3h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.22-3.74.99 1-3.65-.24-.38a9.88 9.88 0 0 1-1.52-5.25c0-5.45 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.9-9.87 9.91Zm5.74-7.4c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.84-1.72-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.12 3.04 1.28 3.25c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.51 1.78.65.75.24 1.43.2 1.97.12.6-.09 1.85-.76 2.11-1.5.26-.74.26-1.38.18-1.5-.08-.13-.29-.2-.6-.36Z"/>
+          </svg>
+          WhatsApp
+        </a>
+
+        <a class="btn btn-call"
+           href="tel:+573176378539"
+           aria-label="Llamar ahora">
+          <!-- icono teléfono -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+          </svg>
+          305 226 9385
+        </a>
+      </div>
+
+      <!-- Botón menú móvil -->
+      <button class="hamburger" type="button" aria-label="Abrir menú" aria-controls="mobileMenu" aria-expanded="false" id="openMenuBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay + Panel móvil -->
+  <div class="menu-overlay" id="menuOverlay" hidden></div>
+
+  <aside class="menu-panel" id="mobileMenu" aria-label="Menú móvil" aria-hidden="true">
+    <div class="menu-head">
+      <div class="menu-title">Menú</div>
+      <button class="menu-close" type="button" aria-label="Cerrar menú" id="closeMenuBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="menu-body" aria-label="Navegación móvil">
+      <a class="menu-link" href="servicios.html">Servicios</a>
+      <a class="menu-link" href="nosotros.html">Nosotros</a>
+      <a class="menu-link" href="contacto.html">Contacto</a>
+
+      <div class="menu-ctas" aria-label="Acciones rápidas">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/3176378539"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.97L0 24l6.3-1.66a11.86 11.86 0 0 0 5.76 1.47h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.43Zm-8.46 18.3h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.22-3.74.99 1-3.65-.24-.38a9.88 9.88 0 0 1-1.52-5.25c0-5.45 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.9-9.87 9.91Zm5.74-7.4c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.84-1.72-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.12 3.04 1.28 3.25c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.51 1.78.65.75.24 1.43.2 1.97.12.6-.09 1.85-.76 2.11-1.5.26-.74.26-1.38.18-1.5-.08-.13-.29-.2-.6-.36Z"/>
+          </svg>
+          WhatsApp
+        </a>
+
+        <a class="btn btn-call" href="tel:+573176378539">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+          </svg>
+          Llamar: 3176378539
+        </a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ================== HTML (solo botones flotantes) ================== -->
+<div class="float-actions" aria-label="Accesos rápidos">
+  <!-- Botón llamada -->
+  <a class="fab fab-call" href="tel:+573176378539" aria-label="Llamar ahora (botón flotante)">
+    <span class="sr-only">Llamar</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+    </svg>
+  </a>
+
+  <!-- Botón WhatsApp -->
+  <a class="fab fab-wa"
+     href="https://wa.me/3176378539"
+     target="_blank" rel="noopener"
+     aria-label="WhatsApp (botón flotante)">
+    <span class="sr-only">WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.97L0 24l6.3-1.66a11.86 11.86 0 0 0 5.76 1.47h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.43Zm-8.46 18.3h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.22-3.74.99 1-3.65-.24-.38a9.88 9.88 0 0 1-1.52-5.25c0-5.45 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.9-9.87 9.91Zm5.74-7.4c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.84-1.72-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.12 3.04 1.28 3.25c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.51 1.78.65.75.24 1.43.2 1.97.12.6-.09 1.85-.76 2.11-1.5.26-.74.26-1.38.18-1.5-.08-.13-.29-.2-.6-.36Z"/>
+    </svg>
+  </a>
+</div>
+
+
+<main>
+    <!-- ========== Nuestra historia ========== -->
+    <section class="story" aria-labelledby="story-title">
+      <div class="container">
+        <h1 id="story-title">Nuestra historia</h1>
+        <p>
+          Fundada en el corazón de Cali, Centro Técnico Cali nació de la necesidad de contar con un servicio técnico
+          confiable y profesional para reparación de neveras y sistemas de refrigeración. Con más de dos décadas
+          sirviendo a hogares y negocios, somos tu aliado en mantenimiento y reparación de equipos de refrigeración
+          comercial e industrial.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Nuestra filosofía (foto izquierda) ========== -->
+    <section class="philosophy" aria-labelledby="philo-title">
+      <div class="container">
+        <div class="philo-grid">
+          <figure class="philo-photo">
+            <!-- Cambia el src por tu imagen real -->
+            <img
+              src="img/banner_filosofia.png"
+              alt="Técnico conversando con cliente en cocina junto a una nevera"
+              loading="lazy"
+              width="1200" height="825"
+            />
+          </figure>
+
+          <div class="philo-text">
+            <h2 id="philo-title">Nuestra filosofía</h2>
+            <p>
+              Nos dedicamos a proporcionar servicios de reparación profesionales con técnicos certificados y amplia
+              experiencia. Cada servicio es realizado con precisión, utilizando repuestos originales de fabricantes
+              reconocidos y técnicas modernas para garantizar la máxima eficiencia de tus equipos de refrigeración.
+            </p>
+            <p>
+              Nuestra misión es mantener tus sistemas de refrigeración funcionando óptimamente. Valoramos la confiabilidad,
+              ofreciendo garantía integral en todos nuestros trabajos y disponibilidad 24/7 para atender emergencias.
+              Tu tranquilidad y equipos en perfecto estado son nuestra prioridad máxima.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Únete a nuestros clientes satisfechos ========== -->
+    <section class="join" aria-labelledby="join-title">
+      <div class="container">
+        <h2 id="join-title">Únete a nuestros clientes satisfechos</h2>
+        <p>
+          ¿Necesitas reparación de tu nevera o nevecón? Contáctanos hoy para programar tu servicio.
+          Tenemos disponibilidad inmediata y atendemos emergencias las 24 horas.
+        </p>
+
+        <div class="join-actions" aria-label="Acciones">
+          <!-- Cambia rutas a tus páginas -->
+          <a class="btn btn-primary" href="servicios.html" aria-label="Ir a la página de servicios">
+            Ver Servicios
+          </a>
+          <a class="btn btn-outline" href="contacto.html" aria-label="Ir a la página de contacto">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+   <!-- FOOTER (sin "Conecta") -->
+  <footer class="site-footer" role="contentinfo" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna: Marca + descripción + contacto -->
+        <div class="footer-brand">
+          <h3>Centro Técnico Cali</h3>
+          <p>Expertos en reparación de neveras y nevecones con servicio profesional garantizado.</p>
+
+          <div class="footer-contact" aria-label="Contacto">
+            <!-- Llamar -->
+            <a class="contact-link" href="tel:+573176378539" aria-label="Llamar al +57 317 637 8539">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+              </svg>
+              +57 317 637 8539
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="contact-link"
+               href="https://wa.me/3176378539"
+               target="_blank" rel="noopener"
+               aria-label="Chat WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.97L0 24l6.3-1.66a11.86 11.86 0 0 0 5.76 1.47h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.43Zm-8.46 18.3h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.22-3.74.99 1-3.65-.24-.38a9.88 9.88 0 0 1-1.52-5.25c0-5.45 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.98 2.9a9.8 9.8 0 0 1 2.9 6.98c0 5.45-4.44 9.9-9.87 9.91Zm5.74-7.4c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.82 1.02-1 1.23-.18.21-.37.23-.68.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.84-1.72-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.62s1.12 3.04 1.28 3.25c.16.21 2.2 3.36 5.33 4.71.75.32 1.33.51 1.78.65.75.24 1.43.2 1.97.12.6-.09 1.85-.76 2.11-1.5.26-.74.26-1.38.18-1.5-.08-.13-.29-.2-.6-.36Z"/>
+              </svg>
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna: Servicios -->
+        <nav class="footer-col" aria-label="Enlaces de servicios">
+          <h4>SERVICIOS</h4>
+          <ul class="footer-links">
+            <li><a href="servicios.html">Todos los servicios</a></li>
+            <li><a href="#">Reparación de neveras</a></li>
+            <li><a href="#">Reparación de nevecones</a></li>
+            <li><a href="#">Mantenimiento preventivo</a></li>
+          </ul>
+        </nav>
+
+        <!-- Columna: Empresa -->
+        <nav class="footer-col" aria-label="Enlaces de empresa">
+          <h4>EMPRESA</h4>
+          <ul class="footer-links">
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Política de servicio</a></li>
+            <li><a href="#">Garantía</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Centro Técnico Cali. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
